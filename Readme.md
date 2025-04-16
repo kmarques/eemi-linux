@@ -100,7 +100,7 @@ L’option `-R` permet d’appliquer ces changements de manière récursive dans
 `chmod` sert à modifier les permissions d'accès d'un fichier ou d'un répertoire.  
 Il existe deux méthodes principales pour définir ces permissions :  
 - **Notation symbolique** (par exemple, `u+r`, `g-w`, `o+x`)  
-- **Notation numérique** (par exemple, `755`, `644`)  
+- **Notation numérique (octal)** (par exemple, `755`, `644`)  
 L’option `-R` peut également être utilisée pour appliquer les modifications de manière récursive.
 
 
