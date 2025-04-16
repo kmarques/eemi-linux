@@ -88,6 +88,23 @@ l'option `-r` pour la copie récursive de répertoires.
 une référence physique vers le même fichier, tandis qu'un lien symbolique 
 (`ln -s`) crée une référence vers le chemin du fichier cible.
 
-chown
-chmod
-touch
+### `chown`
+
+`chown` permet de modifier le propriétaire et le groupe associé d'un fichier ou d'un répertoire.  
+Vous pouvez utiliser cette commande pour transférer la propriété d’un fichier vers un autre utilisateur et/ou groupe.  
+L’option `-R` permet d’appliquer ces changements de manière récursive dans un répertoire.
+
+
+### `chmod`
+
+`chmod` sert à modifier les permissions d'accès d'un fichier ou d'un répertoire.  
+Il existe deux méthodes principales pour définir ces permissions :  
+- **Notation symbolique** (par exemple, `u+r`, `g-w`, `o+x`)  
+- **Notation numérique** (par exemple, `755`, `644`)  
+L’option `-R` peut également être utilisée pour appliquer les modifications de manière récursive.
+
+
+### `touch`
+
+`touch` est utilisée pour créer un fichier vide s’il n'existe pas déjà, ou pour mettre à jour les dates d'accès et de modification d’un fichier existant.  
+Cela peut être utile pour modifier le timestamp d’un fichier sans en changer le contenu.
