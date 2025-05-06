@@ -108,3 +108,73 @@ L’option `-R` peut également être utilisée pour appliquer les modifications
 
 `touch` est utilisée pour créer un fichier vide s’il n'existe pas déjà, ou pour mettre à jour les dates d'accès et de modification d’un fichier existant.  
 Cela peut être utile pour modifier le timestamp d’un fichier sans en changer le contenu.
+
+## Globbing
+
+Le globbing est une fonctionnalité puissante dans les systèmes Unix et Linux 
+qui permet de faire correspondre des fichiers et des répertoires en utilisant 
+des motifs (wildcards) dans les noms de fichiers. Voici quelques 
+caractéristiques courantes du globbing :
+
+### `*` (Astérisque)
+
+L'astérisque `*` est utilisée pour faire correspondre n'importe quel nombre 
+de caractères, y compris aucun. Par exemple, `*.txt` correspondra à tous les 
+fichiers avec l'extension `.txt` dans le répertoire courant.
+
+### `?` (Point d'interrogation)
+
+Le point d'interrogation `?` est utilisé pour faire correspondre exactement 
+un caractère unique. Par exemple, `file?.txt` correspondra à des fichiers 
+tels que `file1.txt`, `fileA.txt`, mais pas `file12.txt`.
+
+### `[]` (Tableaux de valeurs)
+
+Les crochets `[]` permettent de spécifier une liste de caractères possibles 
+pour une position donnée dans le nom de fichier. Par exemple, `[aeiou]*` 
+correspondra à tous les fichiers dont le nom commence par une voyelle.
+
+### `..` (Générateurs de séquence)
+
+Les générateurs de séquence `..` permettent de spécifier un intervalle de 
+valeurs numériques. Par exemple, `file{1..3}.txt` correspondra à `file1.txt`, 
+`file2.txt`, et `file3.txt`.
+
+Le globbing est une technique puissante pour effectuer des opérations sur 
+plusieurs fichiers en une seule commande, que ce soit pour la recherche, la 
+copie ou la suppression. Il est largement utilisé dans les scripts shell et 
+les commandes en ligne de commande pour traiter des ensembles de fichiers en 
+fonction 
+de modèles de noms de fichiers.
+
+## Réseau
+
+### `netstat -laput`
+
+La commande `netstat` permet d'afficher des informations sur les connexions 
+réseau, les tables de routage, les interfaces réseau, etc.
+
+### `ifconfig`
+
+`ifconfig` est utilisé pour configurer et afficher les informations sur les 
+interfaces réseau.
+
+### `nmap`
+
+`nmap` est un utilitaire de découverte de réseau et d'audit de sécurité qui 
+permet de scanner les ports et les services d'une machine distante.
+
+### `traceroute`
+
+`traceroute` est utilisé pour suivre le chemin qu'un paquet réseau prend pour 
+atteindre une destination, en affichant chaque saut intermédiaire.
+
+### `ping`
+
+La commande `ping` est utilisée pour tester la connectivité réseau en 
+envoyant des paquets ICMP à une adresse IP pour vérifier si elle est 
+accessible et mesurer le temps de réponse.
+
+### `nslookup`
+
+La commande `nslookup` est un outil de diagnostic DNS qui permet d’interroger les serveurs de noms pour obtenir des informations sur la résolution de noms de domaine. Par exemple, en tapant `nslookup example.com`, on récupère l’adresse IP associée à « example.com », et en spécifiant un type d’enregistrement (A, MX, TXT, etc.), on peut extraire les enregistrements DNS correspondants. Cette commande fonctionne en mode interactif ou non-interactif et est précieuse pour vérifier la configuration DNS et dépanner les problèmes de résolution de noms.
